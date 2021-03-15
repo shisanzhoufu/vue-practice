@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue</title>
+</head>
+<body>
+    <div id="app">
+        <h1>name:{{name}}</h1>
+        <h1>age:{{age}}</h1>
+        <h1>info.a:{{info.a}}</h1>
+    </div>
+    <script src="./vue.js"></script>
+    <script>
+       const vm =  new Vue({
+            el:'#app',
+            data:{
+                name:'jack',
+                age:18,
+                info:{
+                    a:998
+                }
+            }
+        })
+        console.log(vm)
+    </script>
+</body>
+</html>
